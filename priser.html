@@ -13,6 +13,8 @@ background:linear-gradient(180deg,#050508,#0f1a24);
 color:white;
 }
 
+/* MENY */
+
 .nav{
 display:flex;
 justify-content:center;
@@ -20,78 +22,84 @@ gap:40px;
 padding:20px;
 }
 
+.nav a{
+color:#ddd;
+text-decoration:none;
+}
+
 .nav a:hover{
 color:#f5d27a;
 }
 
+/* HEADER */
+
 .header{
 text-align:center;
-padding:60px 20px;
+margin-top:40px;
 }
 
 .header h1{
 color:#f5d27a;
-font-size:40px;
-border:2px solid #3a5a5a;
+font-size:38px;
+border:2px solid #3a4a5a;
 display:inline-block;
-padding:15px 35px;
+padding:12px 30px;
 }
 
+/* BILDE */
+
 .topimage{
-width:800px;
-margin:auto;
-margin-top:20px;
+text-align:center;
+margin-top:30px;
+}
 
 .topimage img{
-width:100%
+width:300px;
 border-radius:10px;
 }
 
+/* PRIS BOKS */
+
 .container{
-width:900px;
-margin:auto;
-margin-top:60px;
-}
-
-.cards{
-display:fle;
+display:flex;
 justify-content:center;
-gap:40px;
-flex-wrap:wrap;
+margin-top:50px;
 }
 
-.card{
-width:260px;
-background:#f1318;
-padding:25px;
+.pricebox{
+background:#0f1318;
+padding:40px;
 border-radius:12px;
 border:1px solid #1f2a36;
+width:500px;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* PRISER */
+
+.price{
+margin-bottom:40px;
 text-align:center;
 }
 
-.card h2{
+.price h2{
 color:#f5d27a;
 }
 
-.price{
-font-size:28px;
-margin:15px 0;
-}
-
-.card ul{
+.price ul{
 list-style:none;
 padding:0;
 color:#bbb;
 }
 
-.card li{
-margin:8px 0;
+.price li{
+margin:6px 0;
 }
 
 .button{
 display:inline-block;
-margin-top:15px;
-padding: 10px 20p;
+margin-top:10px;
+padding:10px 20px;
 background:#f5d27a;
 color:black;
 border-radius:6px;
@@ -99,9 +107,8 @@ text-decoration:none;
 font-weight:bold;
 }
 
-.card:hover{
-transform(1.05);
-transition:0.3s;
+.button:hover{
+opacity:0.8;
 }
 
 </style>
@@ -109,11 +116,15 @@ transition:0.3s;
 
 <body>
 
-<div class="nav";
+<div class="nav">
 <a href="index.html">Hjem</a>
 <a href="priser.html">Priser</a>
 <a href="ommeg.html">Om meg</a>
 <a href="kontakt.html">Kontakt</a>
+</div>
+
+<div class="header">
+<h1>Priser</h1>
 </div>
 
 <div class="topimage">
@@ -122,31 +133,32 @@ transition:0.3s;
 
 <div class="container">
 
-<div class="cards">
+<div class="pricebox">
 
-<div class="card">
+<div class="price">
 <h2>Privattime</h2>
-<div class="price">300 kr</div>
+<p><b>300 kr</b></p>
 
 <ul>
 <li>1 spiller</li>
 <li>1 time trening</li>
+<li>Personlig coaching</li>
 </ul>
 
 <a class="button" href="kontakt.html">Book time</a>
 </div>
 
-<div class="card">
+<div class="price">
 <h2>Gruppetime</h2>
-<div class="price">150 kr / person</div>
+<p><b>150 kr per person</b></p>
 
 <ul>
-<li>2-4 spillere</li>
+<li>2–4 spillere</li>
 <li>1 time trening</li>
 <li>Teknikk og spill</li>
 </ul>
 
-<a class="buttem" href="kontakt.html">Book time</a>
+<a class="button" href="kontakt.html">Book time</a>
 </div>
 
 </div>
