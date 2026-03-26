@@ -9,36 +9,55 @@
 body{
 margin:0;
 font-family: Arial;
-background:#0b0b0f;
+background:linear-gradient(180deg,#050508,#0f1a24);
 color:white;
 }
 
-.header{
-height:300px;
-background-image:url("tennis.JPG");
-background-size:cover;
-background-position:center;
+/* TOP MENU */
+
+.nav{
 display:flex;
 justify-content:center;
-align-items:center;
-text-align:center;
+gap:40px;
+padding:20px;
+font-size:14px;
 }
 
-.header h1{
-font-size:45px;
+.nav a{
+color:#ddd;
+text-decoration:none;
+}
+
+.nav a:hover{
 color:#f5d27a;
 }
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:48px;
+color:#f5d27a;
+border:2px solid #3a4a5a;
+display:inline-block;
+padding:20px 40px;
+}
+
+.hero p{
+color:#bbb;
+margin-top:15px;
+}
+
+/* CARDS */
 
 .container{
 width:900px;
 margin:auto;
-margin-top:50px;
-text-align:center;
-}
-
-.subtitle{
-color:#ccc;
-margin-bottom:40px;
+margin-top:60px;
 }
 
 .cards{
@@ -50,9 +69,10 @@ flex-wrap:wrap;
 
 .card{
 width:250px;
-background:#111;
+background:#0f1318;
 padding:15px;
-border-radius:10px;
+border-radius:12px;
+border:1px solid #1f2a36;
 }
 
 .card img{
@@ -63,9 +83,10 @@ border-radius:8px;
 }
 
 .card p{
+text-align:center;
 margin-top:10px;
-font-size:18px;
 color:#f5d27a;
+font-size:18px;
 }
 
 .card:hover{
@@ -75,7 +96,6 @@ transition:0.3s;
 
 a{
 text-decoration:none;
-color:white;
 }
 
 </style>
@@ -83,15 +103,19 @@ color:white;
 
 <body>
 
-<div class="header">
+<div class="nav">
+<a href="index.html">Hjem</a>
+<a href="priser.html">Priser</a>
+<a href="ommeg.html">Om meg</a>
+<a href="kontakt.html">Kontakt</a>
+</div>
+
+<div class="hero">
 <h1>Didrik Tennis Coaching</h1>
+<p>Privat- og gruppetrening for spillere som vil bli bedre.</p>
 </div>
 
 <div class="container">
-
-<p class="subtitle">
-Privat- og gruppetrening i tennis for spillere som vil bli bedre.
-</p>
 
 <div class="cards">
 
